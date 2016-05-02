@@ -9,11 +9,10 @@ import java.util.LinkedList;
 public class Core
 {
     static LinkedList<String> allCities = new LinkedList<String>();
-    static LinkedList<String> directions = new LinkedList<String>() ;
 
 
 
-        static void addingallCities()
+   /* static void addingallCities()
         {
              String mequon = "Mequon";
             String grafton = "Grafton";
@@ -27,7 +26,7 @@ public class Core
             allCities.add(sheboygan);
             //System.out.println(allCities);
 
-        }
+        }*/
 
 
 

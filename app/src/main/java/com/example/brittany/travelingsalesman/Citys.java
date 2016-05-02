@@ -34,16 +34,20 @@ public class Citys
     private String distance;
     private String destination;
 
-    public Citys()
+    public Citys(String name, String destination, String distance)
     {
-       // this.name = name;
-       // this.destination= "";
-       //this.distance = 0;
+        this.name = name;
+        this.destination= destination;
+        this.distance = distance;
 
     }
 
+    public String getStringofObject() {
+        return "[" + getName()+ " -- " + getDestination() + " "+ getDistance()+ " miles]";
+    }
 
-    public void addEdge(String start, String destination, String distance ) {
+
+   /* public void addEdge(String start, String destination, String distance ) {
 
         String edge = "";
         start = Core.allCities.peek();
@@ -52,7 +56,7 @@ public class Citys
             edge = start +" -- "+ destination +" = "+distance+ " miles";
            Core.directions.addLast(edge);
         Core.allCities.pop();
-    }
+    } */
 
 
 }
